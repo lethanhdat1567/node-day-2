@@ -4,7 +4,7 @@ import cors from "cors";
 import apiRouter from "./src/routes/index.js";
 
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 // Middleware parse JSON
 app.use(express.json());
